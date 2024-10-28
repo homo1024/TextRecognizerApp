@@ -40,8 +40,11 @@ android {
         jvmTarget = '1.8'
     }
     packagingOptions {
-        exclude 'META-INF/androidx.exifinterface_exifinterface.version'
+        resources {
+            excludes += ['META-INF/androidx.exifinterface_exifinterface.version']
+        }
     }
+    namespace 'com.example.textrecognizer'
 }
 
 dependencies {
