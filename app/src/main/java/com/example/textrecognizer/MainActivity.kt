@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
 
         recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
 
+
+
         // Request camera permissions
         if (allPermissionsGranted()) {
             startCamera()
